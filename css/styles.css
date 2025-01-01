@@ -20,7 +20,6 @@ body {
     list-style-type: none;
     margin: 0 50px 0 0;
     display: flex;
-    justify-content: center;
 }
 
 .navbar li {
@@ -55,10 +54,11 @@ body {
     display: flex;
     align-items: center;
     background-color: rgba(255, 255, 255);
+    justify-content: space-evenly;
 }
 
 .intro-box {
-    margin: 20px 0 0 200px;
+    margin: 20px 0 0 0;
     min-height: 200px;  
 }
 
@@ -113,11 +113,12 @@ body {
     border-radius: 25px;
     height: 900px;
     width: 722px;
-    margin-left: 210px;
 }
 
 .profile-box img{
     border-radius: 25px;
+    width: 722px;
+    height: 900px;
 }
 
 /* About Section*/
@@ -128,7 +129,6 @@ body {
     padding: 0 150px 50px;
     justify-content: center;
     align-items: center;
-    font-size: 1.4rem;
     text-align: center;
     background-color: rgb(242, 248, 255);
 }
@@ -208,12 +208,6 @@ body {
 
 .project-list .project-item .project-name{
     padding-top: 15px;
-    font-size: 1.7rem;
-    font-family: "Trebuchet MS", "sans-serif";
-}
-
-.project-list .project-item .project-name{
-    padding-top: 15px;
     margin-top: 5px;
     margin-bottom: 10px;
     font-size: 1.7rem;
@@ -259,4 +253,168 @@ body {
     margin: 0;
     font-size: 0.9rem;
     font-family: "Trebuchet MS", "sans-serif";
+}
+
+@media (max-width: 1343px) {
+
+    html, body {
+        overflow-x: hidden;
+      }
+
+    body {
+        position: relative;
+      }
+      
+    .navbar {
+        height: 40px;
+    }
+
+    .navbar ul{
+        padding: 0;
+        margin: 0 10px 0 0;
+        justify-content: space-evenly;
+    }
+
+    .navbar li {
+        font-size: 1.1rem;
+        padding: 0;
+
+    }
+
+    .navbar #initials {
+        margin-left: 10px;
+        font-size: 1.2rem;
+    }
+
+    .intro-section{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 5vh 0;
+    }
+
+    .intro-section .intro-box{
+        padding: 0;
+        margin: 0;
+    }
+
+    .intro-box h1 {
+        font-size: min(10vw, 80px);
+        padding: 0;
+        margin: 1% 0 1% 0;
+    }
+    
+    .intro-box h2 {
+        font-size: min(7vw, 56px);
+        margin-bottom: 0px;
+    }
+    
+    .intro-box h2::after {
+        width: 65%;
+    }
+    
+    .intro-box h3 {
+        font-size: min(6vw, 48px);
+        margin-bottom: 5%;
+        margin-top: 1%;
+    }
+
+    .icon-container {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    
+    .icon-link {
+        padding-right: 5vw;
+        width: min(7vw, 56px);
+        height: min(7vw, 56px);
+    }
+
+    .profile-box {
+        border: solid black;
+        width: min(63.525vw, 400px); 
+        height: min(79.2792vw, 499.2px);
+        margin-left: 0;
+        margin-top: 6vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profile-box img {
+        width: min(63.525vw, 400px); 
+        height: min(79.2792vw, 499.2px);
+    }
+
+    .project-list .project-item {
+        width: 150px;
+        height: 150px;
+    }
+
+    .project-list .project-item .project-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .about-section {
+        padding: 0 min(30vw, 25px) min(50vw, 42px);
+    }
+
+    .about-section h1{
+        font-size: min(7vw, 56px);
+    }
+    
+    .about-section h2{
+        font-size: min(5.8vw, 42px);
+        font-family: "Trebuchet MS", "sans-serif";
+    }
+    
+    .about-section p{
+        font-size: min(3.7vw, 24px);
+        font-family: "Trebuchet MS", "sans-serif";
+    }
+    
+    .languages-box img{
+        margin: 0 min(2vw, 10px);
+        width: min(20vw, 120px);
+        height: min(20vw, 120px);
+    }
+
+    
+    .projects-section h1{
+        font-size: min(7vw, 56px);
+        margin: min(20vw, 100px) 0 (15vw, 75px);
+    }
+    
+    .project-list .project-item {
+        padding: 1.2vw 0;
+        width: min(64vw, 400px);
+        height: min(95vw, 550px);
+    }
+    
+    .project-list .project-item .project-image{
+        width: min(55vw, 350px);
+        height: min(55vw, 350px);
+        margin: 0;
+        padding: 0;
+    }
+    
+    .project-list .project-item .project-name{
+        padding-top: min(3vw, 15px);
+        margin-top: min(1%, 5px);
+        margin-bottom: 4%;
+        font-size: min(4.4vw, 28px);
+    }
+    
+    .project-list .project-item .project-description{
+        margin: 0 4%;
+        font-size: min(3.3vw, 18px);
+    }
+    
+    .project-list .project-item .project-link{
+        font-size: min(3.3vw, 18px);
+        padding: 3% 4%;
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
 }
