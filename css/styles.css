@@ -14,9 +14,11 @@ body {
     top: 0;
     position: fixed;
     padding: 0;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.7);
+    z-index: 1;
 }
 
-.navbar ul{
+.navbar ul {
     list-style-type: none;
     margin: 0 50px 0 0;
     display: flex;
@@ -32,14 +34,14 @@ body {
     background-color: transparent;
 }
 
-.navbar a{
+.navbar a {
     text-decoration: none;
     color: black;
 }
 
-.navbar li:hover{
+.navbar li:hover {
     border-bottom: solid black;
-    background-color: rgba(0, 0, 0, 0.025);
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .navbar #initials {
@@ -49,7 +51,7 @@ body {
 }
 
 /* Intro Section */
-.intro-section{
+.intro-section {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -115,7 +117,7 @@ body {
     width: 722px;
 }
 
-.profile-box img{
+.profile-box img {
     border-radius: 25px;
     width: 722px;
     height: 900px;
@@ -131,19 +133,22 @@ body {
     align-items: center;
     text-align: center;
     background-color: rgb(242, 248, 255);
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0%;
 }
 
-.about-section h1{
+.about-section h1 {
     font-size: 3rem;
     font-family: "Trebuchet MS", "sans-serif";
 }
 
-.about-section h2{
+.about-section h2 {
     font-size: 2.5rem;
     font-family: "Trebuchet MS", "sans-serif";
 }
 
-.about-section p{
+.about-section p {
     font-size: 1.5rem;
     font-family: "Trebuchet MS", "sans-serif";
 }
@@ -157,13 +162,13 @@ body {
     align-items: center;
 }
 
-.languages-box{
+.languages-box {
     display: flex;
     align-items: center;
     justify-content: left;
 }
 
-.languages-box img{
+.languages-box img {
     margin: 0 10px;
     width: 120px;
     height: 120px;
@@ -179,12 +184,15 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: rgb(221, 231, 247);
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0%;
 }
 
-.projects-section h1{
+.projects-section h1 {
     font-size: 3rem;
     font-family: "Trebuchet MS", "sans-serif";
-    margin: 100px 0 75px;
+    margin: 150px 0 75px;
 }
 
 .project-list .project-item {
@@ -199,14 +207,14 @@ body {
     background-color: white;
 }
 
-.project-list .project-item .project-image{
+.project-list .project-item .project-image {
     padding: 5px;
     width: 350px;
     height: 350px;
     border-radius: 10px;
 }
 
-.project-list .project-item .project-name{
+.project-list .project-item .project-name {
     padding-top: 15px;
     margin-top: 5px;
     margin-bottom: 10px;
@@ -214,14 +222,14 @@ body {
     font-family: "Trebuchet MS", "sans-serif";
 }
 
-.project-list .project-item .project-description{
+.project-list .project-item .project-description {
     margin: 0 10px;
     font-size: 1.1rem;
     font-family: "Trebuchet MS", "sans-serif";
     text-align: center;
 }
 
-.project-list .project-item .project-link{
+.project-list .project-item .project-link {
     font-size: 1.1rem;
     color: black;
     background-color: rgba(235, 216, 245, 0.9);
@@ -235,7 +243,7 @@ body {
     margin-bottom: 5px;
 }
 
-.project-list .project-item .project-link:hover{
+.project-list .project-item .project-link:hover {
     color: white;
     background-color: rgba(122, 77, 122, 0.5);
 }
@@ -255,6 +263,18 @@ body {
     font-family: "Trebuchet MS", "sans-serif";
 }
 
+/* Animations */
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.4;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
 @media (max-width: 1343px) {
 
     html, body {
@@ -269,7 +289,7 @@ body {
         height: 40px;
     }
 
-    .navbar ul{
+    .navbar ul {
         padding: 0;
         margin: 0 10px 0 0;
         justify-content: space-evenly;
@@ -286,14 +306,14 @@ body {
         font-size: 1.2rem;
     }
 
-    .intro-section{
+    .intro-section {
         display: flex;
         flex-direction: column;
         margin: 0;
         padding: 5vh 0;
     }
 
-    .intro-section .intro-box{
+    .intro-section .intro-box {
         padding: 0;
         margin: 0;
     }
@@ -358,30 +378,38 @@ body {
 
     .about-section {
         padding: 0 min(30vw, 25px) min(50vw, 42px);
+        animation: none;
+        animation-timeline: none;
+        animation-range: none;
     }
 
-    .about-section h1{
+    .about-section h1 {
         font-size: min(7vw, 56px);
     }
     
-    .about-section h2{
+    .about-section h2 {
         font-size: min(5.8vw, 42px);
         font-family: "Trebuchet MS", "sans-serif";
     }
     
-    .about-section p{
+    .about-section p {
         font-size: min(3.7vw, 24px);
         font-family: "Trebuchet MS", "sans-serif";
     }
     
-    .languages-box img{
+    .languages-box img {
         margin: 0 min(2vw, 10px);
         width: min(20vw, 120px);
         height: min(20vw, 120px);
     }
 
-    
-    .projects-section h1{
+    .projects-section {
+        animation: none;
+        animation-timeline: none;
+        animation-range: none;
+    }
+
+    .projects-section h1 {
         font-size: min(7vw, 56px);
         margin: min(20vw, 100px) 0 (15vw, 75px);
     }
@@ -392,26 +420,26 @@ body {
         height: min(95vw, 550px);
     }
     
-    .project-list .project-item .project-image{
+    .project-list .project-item .project-image {
         width: min(55vw, 350px);
         height: min(55vw, 350px);
         margin: 0;
         padding: 0;
     }
     
-    .project-list .project-item .project-name{
+    .project-list .project-item .project-name {
         padding-top: min(3vw, 15px);
         margin-top: min(1%, 5px);
         margin-bottom: 4%;
         font-size: min(4.4vw, 28px);
     }
     
-    .project-list .project-item .project-description{
+    .project-list .project-item .project-description {
         margin: 0 4%;
         font-size: min(3.3vw, 18px);
     }
     
-    .project-list .project-item .project-link{
+    .project-list .project-item .project-link {
         font-size: min(3.3vw, 18px);
         padding: 3% 4%;
         margin-top: 5%;
