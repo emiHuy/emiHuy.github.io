@@ -55,13 +55,31 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
-    background-color: rgba(255, 255, 255);
+    background: linear-gradient(-45deg, #fcebe6, #ede3fd, #e2e8fa, #dffaf4);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
     justify-content: space-evenly;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .intro-box {
     margin: 20px 0 0 0;
     min-height: 200px;  
+    background-color: rgb(253, 252, 255);
+    padding: 50px 50px 50px 50px;
+    border-radius: 5%;
+    filter: drop-shadow(0px 5px 10px #000000)
 }
 
 .intro-box h1 {
@@ -121,6 +139,7 @@ body {
     border-radius: 25px;
     width: 722px;
     height: 900px;
+    filter: drop-shadow(0px 5px 10px #000000)
 }
 
 /* About Section*/
@@ -205,6 +224,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: white;
+    filter: drop-shadow(0px 3px 6px #000000)
 }
 
 .project-list .project-item .project-image {
@@ -314,7 +334,8 @@ body {
     }
 
     .intro-section .intro-box {
-        padding: 0;
+        padding: 50px 50px 50px 50px;
+        border-radius: 5%;
         margin: 0;
     }
 
@@ -352,7 +373,6 @@ body {
     }
 
     .profile-box {
-        border: solid black;
         width: min(63.525vw, 400px); 
         height: min(79.2792vw, 499.2px);
         margin-left: 0;
