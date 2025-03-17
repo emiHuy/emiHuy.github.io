@@ -144,7 +144,7 @@ body {
 
 /* About Section*/
 .about-section {
-    height: 60vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     padding: 0 150px 50px;
