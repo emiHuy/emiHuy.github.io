@@ -486,7 +486,7 @@ body {
     }
     
     .project-list .project-item .project-name {
-        padding-top: min(2vw, 10px);
+        padding-top: min(3vw, 15px);
         margin-top: min(1%, 5px);
         margin-bottom: 4%;
         font-size: min(4.4vw, 28px);
