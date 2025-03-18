@@ -214,6 +214,34 @@ body {
     margin: 150px 0 75px;
 }
 
+.project-wrapper::-webkit-scrollbar {
+    height: 7px;
+    width: 0px;
+}
+
+.project-wrapper::-webkit-scrollbar-track {
+    background: none;
+    border-radius: 10px;
+}
+
+.project-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden; 
+}
+
+.project-list {
+    display: flex;
+    width: fit-content;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 40px;
+    overflow-x: auto;
+    margin: auto;
+}
+
 .project-list .project-item {
     border: solid rgb(116, 116, 116);
     border-radius: 20px;
@@ -224,7 +252,12 @@ body {
     justify-content: center;
     align-items: center;
     background-color: white;
-    filter: drop-shadow(0px 3px 6px #000000)
+    filter: drop-shadow(0px 3px 6px #000000);
+    position: relative;
+}
+
+.project-list .project-item:hover{
+    scale: 1.05;
 }
 
 .project-list .project-item .project-image {
@@ -433,6 +466,10 @@ body {
         font-size: min(7vw, 56px);
         margin: min(20vw, 100px) 0 (15vw, 75px);
     }
+
+    .project-wrapper {
+        width: 420px;
+    }
     
     .project-list .project-item {
         padding: 1.2vw 0;
@@ -465,4 +502,5 @@ body {
         margin-top: 5%;
         margin-bottom: 3%;
     }
+
 }
