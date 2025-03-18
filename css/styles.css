@@ -467,6 +467,10 @@ body {
         margin: min(20vw, 100px) 0 (15vw, 75px);
     }
     
+    .project-wrapper {
+        width: 420px;
+    }
+    
     .project-list .project-item {
         padding: 1.2vw 0;
         width: min(64vw, 400px);
