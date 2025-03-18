@@ -214,6 +214,12 @@ body {
     margin: 150px 0 75px;
 }
 
+.project-container {
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+}
+
 .project-wrapper::-webkit-scrollbar {
     height: 7px;
     width: 0px;
