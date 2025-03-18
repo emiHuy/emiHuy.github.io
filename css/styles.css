@@ -228,6 +228,7 @@ body {
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden; 
+    position: relative;
 }
 
 .project-list {
@@ -468,7 +469,7 @@ body {
     }
     
     .project-wrapper {
-        width: 420px;
+        width: 480px;
     }
     
     .project-list .project-item {
