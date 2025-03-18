@@ -425,6 +425,10 @@ body {
         height: 150px;
     }
 
+    .project-list .project-item:hover{
+        scale: 1;
+    }
+
     .project-list .project-item .project-image {
         width: 100px;
         height: 100px;
