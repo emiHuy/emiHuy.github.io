@@ -45,7 +45,9 @@ header {
 }
 
 .navbar a:active {
-    color: rgb(54, 53, 62)
+    color: rgb(54, 53, 62);
+    background: rgb(54, 81, 130);
+    animation: gradient 0.02s ease-in-out both;
 }
 
 .home {
@@ -115,12 +117,11 @@ header {
 
 .icon {
     height: 50px;
+    width: 50px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50px;
-    overflow-x: visible;
     margin-bottom: 100px;
 }
 
@@ -131,8 +132,6 @@ header {
 }
 
 #caption {
-    display: block;
-    visibility: hidden;
     font-size: 0px;
     background-color: cornflowerblue;
     border-radius: 15px;
@@ -145,7 +144,6 @@ header {
 }
 
 .icon:hover #caption {
-    visibility: visible;
     transition: font-size 0.2s ease;
     font-size: 18px;
     padding: 8px;
@@ -224,10 +222,82 @@ header {
     color: white;
     font-family: verdana, sans-serif;    font-size: 28px;
     font-size: 32px;
+    margin: 50px 0;
 }
 
 .projects h2 {
     color: white;
-    font-family: verdana, sans-serif;
+    font-family: helvetica, sans-serif;
     font-size: 28px;
+    margin: 50px;
+}
+
+.personal-projects {
+    display: flex;
+    column-gap: 30px;
+    width: 830px;
+    overflow-x: auto;
+    height: 500px;
+    padding: 10px;
+}
+
+.personal-projects::-webkit-scrollbar {
+    display: none;
+}
+
+.personal-project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(200,200,210,0.03);
+    box-shadow: inset 0 0 20px rgba(200, 200, 210, 0.18), 0 0px 20px rgba(0, 0, 0, 0.7);
+    padding: 12px;
+    border-radius: 5%;
+    border: 1px solid rgba(150,150,150, 0.4);
+    height: 380px;
+}
+
+.personal-project-card:hover{
+    scale: 1.05;
+}
+
+.personal-project-card .project-img {
+    width: 220px;
+    height: 220px;
+    border: 2px solid rgb(180,180,180);
+    border-radius: 5%;
+    margin: 0;
+}
+
+.personal-project-card h3 {
+    margin: 15px;
+    color: white;
+    font-family: verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.personal-project-card p {
+    margin: 0;
+    width: 230px;
+    color: rgb(220, 220, 220);
+    font-size: 15px;
+    text-align: center;
+    font-family: verdana, sans-serif;
+}
+
+.arrow {
+    margin-left: 195px;
+    width: 35px;
+    height: 35px;
+    filter: brightness(0) saturate(100%) invert(36%) saturate(0) brightness(200%)
+}
+
+.arrow:hover {
+    filter: brightness(0) saturate(100%) invert(22%) sepia(73%) saturate(617%) hue-rotate(190deg) brightness(190%) contrast(87%);
+}
+
+.arrow:active {
+    filter: brightness(0) saturate(100%) invert(22%) sepia(73%) saturate(500%) hue-rotate(190deg) brightness(100%) contrast(87%);  
 }
