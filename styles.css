@@ -1,5 +1,9 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: rgb(20,20,20);
+    background-color: rgb(21,21,30);
     display: grid;
     place-items: center;
     row-gap: 50px;
@@ -14,7 +18,7 @@ header {
 .navbar ul{
     list-style-type: none;
     display: flex;
-    background-color: rgb(35,35,35);
+    background-color: rgb(40,40,42);
     width: 310px;
     height: 30px;
     justify-content: center;
@@ -38,6 +42,10 @@ header {
     padding: 5px 10px;
     margin: 0px 10px;
     transition: margin 0.2s ease, padding 0.2s ease;
+}
+
+.navbar a:active {
+    color: rgb(54, 53, 62)
 }
 
 .home {
@@ -78,7 +86,6 @@ header {
     opacity: 1;
 }
 
-
 .home h2 {
     margin: 30px 0 0 0;
     font-size: 25px;
@@ -107,13 +114,14 @@ header {
 }
 
 .icon {
-    height: 200px;
+    height: 50px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50px;
     overflow-x: visible;
+    margin-bottom: 100px;
 }
 
 #icon-img {
@@ -125,7 +133,6 @@ header {
 #caption {
     display: block;
     visibility: hidden;
-    height: 20px;
     font-size: 0px;
     background-color: cornflowerblue;
     border-radius: 15px;
@@ -146,14 +153,17 @@ header {
 
 .about {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .about h1 {
     color: white;
     font-family: verdana, sans-serif;
     text-align: center;
-    margin: 100px 0 50px 0;
+    font-size: 32px;
 }
 
 .about p {
@@ -161,5 +171,63 @@ header {
     text-align: center;
     font-family: helvetica, sans-serif;
     font-size: 20px;
-    margin: 5px 0;
+    margin: 2px 0;
+}
+
+.about h2 {
+    color: white;
+    font-family: verdana, sans-serif;
+    text-align: center;
+    margin: 100px 0 50px 0;
+    font-size: 28px;
+}
+
+.tool-container {
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.tool {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    column-gap: 15px;
+    background-color: rgba(255,255,255,0.2);
+    padding: 0 15px;
+    height: 50px;
+}
+
+.tool:hover {
+    transform: scale(1.1);
+}
+
+.tool img {
+    width: 30px;
+}
+
+.tool p {
+    color: white;
+}
+
+.projects {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects h1 {
+    color: white;
+    font-family: verdana, sans-serif;    font-size: 28px;
+    font-size: 32px;
+}
+
+.projects h2 {
+    color: white;
+    font-family: verdana, sans-serif;
+    font-size: 28px;
 }
