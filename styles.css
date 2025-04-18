@@ -1,0 +1,121 @@
+body {
+    background-color: rgb(20,20,20);
+    display: grid;
+    place-items: center;
+}
+
+header {
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+}
+
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    background-color: rgb(35,35,35);
+    width: 310px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    border-radius: 20px;
+    margin: 20px 0 0 0;
+}
+
+.navbar a {
+    color: white;
+    font-family: verdana, sans-serif;
+    border-radius: 20px;
+    padding: 0;
+    margin: 5px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: cornflowerblue;
+    padding: 5px 10px;
+    margin: 0px 10px;
+    transition: margin 0.2s ease, padding 0.2s ease;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.home img {
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+    background-color:cornflowerblue;
+}
+
+.home h2 {
+    margin: 30px 0 0 0;
+    font-size: 25px;
+}
+
+.home h1 {
+    margin: 10px 0 0 0;
+    font-size: 40px;
+}
+
+.home p {
+    margin: 15px 0 0 0;
+    font-size: 22px;
+}
+
+.home h1, .home h2, .home p {
+    color: white;
+    font-family: helvetica, sans-serif;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    margin: 60px 0 0 0;
+}
+
+.icon {
+    height: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+    overflow-x: visible;
+}
+
+#icon-img {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+
+#caption {
+    display: block;
+    visibility: hidden;
+    height: 20px;
+    font-size: 0px;
+    background-color: cornflowerblue;
+    border-radius: 15px;
+    padding: 0;
+    margin-top: 12px;
+}
+
+.icon:hover img{
+    transform: scale(1.18);
+}
+
+.icon:hover #caption {
+    visibility: visible;
+    transition: font-size 0.2s ease;
+    font-size: 18px;
+    padding: 8px;
+}
