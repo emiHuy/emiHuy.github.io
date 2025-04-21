@@ -1,12 +1,14 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
     background-color: rgb(21,21,30);
+    overflow-x: hidden;
 }
 
-header {
+.header {
     top: 10px;
     position: sticky;
     z-index: 1000;
@@ -130,6 +132,9 @@ header {
     width: 50px;
     height: 50px;
     background-color: transparent;
+    scale: 1;
+    transition: scale 0.2s ease;
+    border-color: transparent
 }
 
 .home .caption {
@@ -138,14 +143,17 @@ header {
     border-radius: 15px;
     padding: 0;
     margin-top: 12px;
+    transition: font-size 0.1s ease;
 }
 
 .icon:hover img{
-    transform: scale(1.18);
+    transition: scale 0.15s ease;
+    scale: 1.2;
+    filter: brightness(0) saturate(100%) invert(22%) sepia(73%) saturate(617%) hue-rotate(190deg) brightness(250%) contrast(87%);
 }
 
 .icon:hover .caption {
-    transition: font-size 0.2s ease;
+    transition: font-size 0.3s ease;
     font-size: 18px;
     padding: 8px;
 }
@@ -221,7 +229,8 @@ header {
 
 .projects h1 {
     color: white;
-    font-family: verdana, sans-serif;    font-size: 28px;
+    font-family: verdana, sans-serif;    
+    font-size: 28px;
     font-size: 32px;
     margin: 50px 0;
 }
@@ -235,17 +244,45 @@ header {
 
 .personal-projects {
     display: flex;
-    justify-content: flex-start;
     column-gap: 30px;
-    width: 550px;
+    width: 70vw;
     overflow-x: auto;
-    height: 500px;
+    height: 450px;
     padding: 10px;
+    overscroll-behavior-inline: contain;
+    justify-content: flex-start;
 }
 
 .personal-projects::-webkit-scrollbar {
-    display: none;
+    height: 12px;
 }
+
+.personal-projects::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.personal-projects::-webkit-scrollbar-thumb {
+    background-color: cornflowerblue;
+    border-radius: 10px;
+}
+
+.personal-prokects::-webkit-scrollbar-button {
+    display: block;
+}
+
+.personal-prokects::-webkit-scrollbar-button {
+    background-color: white; 
+    height: 10px; 
+}
+
+.personal-prokects::-webkit-scrollbar-button:vertical:start {
+    display: block;
+}
+
+.personal-prokects::-webkit-scrollbar-button:vertical:end {
+    display: block;
+}
+
 
 .personal-project-card {
     display: flex;
@@ -258,9 +295,12 @@ header {
     border-radius: 5%;
     border: 1px solid rgba(150,150,150, 0.4);
     height: 380px;
+    scale: 1;
+    transition: scale 0.2s ease;
 }
 
 .personal-project-card:hover{
+    transition: scale 0.2s ease;
     scale: 1.05;
 }
 
@@ -291,15 +331,19 @@ header {
 
 .arrow {
     margin-left: 195px;
-    width: 35px;
-    height: 35px;
-    filter: brightness(0) saturate(100%) invert(36%) saturate(0) brightness(200%)
+    width: 30px;
+    height: 30px;
+    scale: 1;
+    filter: brightness(0) saturate(100%) invert(36%) saturate(0) brightness(200%);
+    transition: scale 0.2s ease;
 }
 
 .arrow:hover {
-    filter: brightness(0) saturate(100%) invert(22%) sepia(73%) saturate(617%) hue-rotate(190deg) brightness(190%) contrast(87%);
+    filter: brightness(0) saturate(100%) invert(22%) sepia(73%) saturate(617%) hue-rotate(190deg) brightness(220%) contrast(87%);
+    transition: scale 0.2s ease;
+    scale: 1.2;
 }
 
 .arrow:active {
-    filter: brightness(0) saturate(100%) invert(22%) sepia(73%) saturate(500%) hue-rotate(190deg) brightness(100%) contrast(87%);  
+    filter: brightness(0) saturate(100%) invert(22%) sepia(73%) saturate(600%) hue-rotate(190deg) brightness(100%) contrast(87%);  
 }
