@@ -1,6 +1,5 @@
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 body {
@@ -8,7 +7,7 @@ body {
     overflow-x: hidden;
 }
 
-.header {
+header {
     top: 10px;
     position: sticky;
     z-index: 1000;
