@@ -1,6 +1,5 @@
 html {
     scroll-behavior: smooth;
-    place-items: center;
 }
 
 body {
@@ -19,7 +18,8 @@ body {
 }
 
 .navbar {
-    place-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar ul{
