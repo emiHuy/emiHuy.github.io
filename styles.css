@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    place-items: center;
 }
 
 body {
@@ -11,6 +12,7 @@ header {
     top: 10px;
     position: sticky;
     z-index: 1000;
+    place-items: center;
 }
 
 .navbar {
