@@ -168,6 +168,12 @@ body {
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    overflow-y: auto;
+    padding-bottom: 30px;
+}
+
+.about::-webkit-scrollbar {
+    display: none;
 }
 
 .about h1 {
@@ -200,7 +206,11 @@ body {
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
-    overflow-y: hidden;
+    overflow-y: visible;
+}
+
+.tool-container::-webkit-scrollbar {
+    display: none;
 }
 
 .tool {
