@@ -1,13 +1,20 @@
 html {
+    width: 100%;
+    padding: 0;
+    margin: 0;
     scroll-behavior: smooth;
 }
 
 body {
+    height: 100%;
+    width: 100%;
     background-color: rgb(21,21,30);
     display: flex;
     flex-direction: column;
     column-gap: auto;
     justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 .header {
@@ -57,12 +64,12 @@ body {
 }
 
 .home {
-    height: calc(100vh-50px);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 160px 0 0 0;
+    margin: -15px 0 0 0;
 }
 
 .home .profile {
@@ -131,7 +138,7 @@ body {
     margin-bottom: 100px;
 }
 
-.home .icon-img {
+.icon img {
     width: 50px;
     height: 50px;
     background-color: transparent;
@@ -242,6 +249,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    height: 100vh;
 }
 
 .projects h1 {
@@ -249,7 +257,6 @@ body {
     font-family: verdana, sans-serif;    
     font-size: 28px;
     font-size: 32px;
-    margin: 250px 0 50px 0;
 }
 
 .projects h2 {
@@ -363,4 +370,44 @@ body {
 
 .arrow:active {
     filter: brightness(0) saturate(100%) invert(22%) sepia(73%) saturate(600%) hue-rotate(190deg) brightness(100%) contrast(87%);  
+}
+
+footer {
+    background-color: rgb(40,40,42);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer .icon-container {
+    margin: 10px 0 0 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 40px;
+}
+
+footer .icon {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+}
+
+footer .icon img {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+footer p {
+    margin: 0;
+    padding: 15px 0 15px 0;
+    color: rgb(129, 129, 129);
+    font-family: verdana, sans-serif;
+    font-size: 12px;
 }
