@@ -17,6 +17,7 @@ body {
     margin: 0;
 }
 
+/* Header and Navbar */
 .header {
     top: 10px;
     position: sticky;
@@ -63,6 +64,7 @@ body {
     animation: gradient 0.02s ease-in-out both;
 }
 
+/* Home Section */
 .home {
     height: 100vh;
     display: flex;
@@ -168,6 +170,7 @@ body {
     padding: 8px;
 }
 
+/* About Section */
 .about {
     height: auto;
     display: flex;
@@ -242,6 +245,7 @@ body {
     color: white;
 }
 
+/* Projects Section */
 .projects {
     height: auto;
     display: flex;
@@ -351,12 +355,14 @@ body {
     font-size: 15px;
     text-align: center;
     font-family: verdana, sans-serif;
+    height: 46px;
 }
 
 .arrow {
     margin-left: 195px;
     width: 30px;
     height: 30px;
+    translate: 0 10px;
     scale: 1;
     filter: brightness(0) saturate(100%) invert(36%) saturate(0) brightness(200%);
     transition: scale 0.2s ease;
@@ -372,6 +378,7 @@ body {
     filter: brightness(0) saturate(100%) invert(22%) sepia(73%) saturate(600%) hue-rotate(190deg) brightness(100%) contrast(87%);  
 }
 
+/* Footer */
 footer {
     background-color: rgb(40,40,42);
     height: auto;
