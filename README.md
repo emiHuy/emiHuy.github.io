@@ -1,7 +1,7 @@
 # Emily Huynh's Portfolio Website
 https://emihuy.github.io/
 
-**Last Updated**: May 9, 2025
+**Last Updated**: May 10, 2025
 
 ## Description
 This is my portfolio website, designed to showcase my skills, projects and experience.
