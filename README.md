@@ -4,7 +4,7 @@ https://emihuy.github.io/
 **Last Updated**: May 10, 2025
 
 ## Description
-This is my portfolio website, designed to showcase my skills, projects and experience.
+This is my portfolio website, designed to showcase my skills, projects, and experience.
 
 ## Contact Information
 - **Email**: emilyhuynh06@gmail.com
