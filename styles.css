@@ -292,7 +292,7 @@ body {
 .personal-projects {
     display: flex;
     column-gap: 30px;
-    width: 70vw;
+    width: 52.5vw;
     overflow-x: auto;
     height: 450px;
     padding: 10px 25px;
