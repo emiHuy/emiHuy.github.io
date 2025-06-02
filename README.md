@@ -8,5 +8,5 @@ This is my portfolio website, designed to showcase my skills, projects, and expe
 
 ## Contact Information
 - **Email**: emilyhuynh06@gmail.com
-- **LinkedIn**: https://www.linkedin.com/in/emily-huynh-665aa4334
+- **LinkedIn**: https://www.linkedin.com/in/emily-huynh-tt8
 - **GitHub**: https://www.github.com/emiHuy
