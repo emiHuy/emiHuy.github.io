@@ -35,7 +35,6 @@ body {
     animation-range: entry 0% cover 40%;
 }
 
-
 /* Header and Navbar */
 .header {
     top: 10px;
@@ -292,7 +291,7 @@ body {
 .personal-projects {
     display: flex;
     column-gap: 30px;
-    width: 52.5vw;
+    width: 58vw;
     overflow-x: auto;
     height: 450px;
     padding: 10px 25px;
@@ -330,7 +329,6 @@ body {
 .personal-prokects::-webkit-scrollbar-button:vertical:end {
     display: block;
 }
-
 
 .personal-project-card {
     display: flex;
