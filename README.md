@@ -1,5 +1,5 @@
 # Emily Huynh's Portfolio Website
-https://emihuy.github.io/
+[Visit the live website](https://emihuy.github.io/)
 
 **Last Updated**: June 1, 2025
 
