@@ -83,7 +83,7 @@ body {
 }
 
 /* Home Section */
-.home {
+.home-section {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -92,51 +92,51 @@ body {
     margin: -15px 0 0 0;
 }
 
-.home .profile {
+.home-section .profile {
     position: relative;
     width: 310px;
     height: 310px;
     justify-content: center;
 }
 
-.home img {
+.home-section img {
     width: 310px;
     height: 310px;
     border-radius: 50%;
     background-color:cornflowerblue;
 }
 
-.home .profile p {
+.home-section .profile p {
     opacity: 0;
     text-align: center;
     transform: translate(0, -180px);
 }
 
-.home .profile:hover img{
+.home-section .profile:hover img{
     opacity: 0.3;
 }
 
-.home .profile:hover p {
+.home-section .profile:hover p {
     transition: opacity 0.2s ease;
     opacity: 1;
 }
 
-.home h2 {
+.home-section h2 {
     margin: 30px 0 0 0;
     font-size: 25px;
 }
 
-.home h1 {
+.home-section h1 {
     margin: 10px 0 0 0;
     font-size: 40px;
 }
 
-.home p {
+.home-section p {
     margin: 15px 0 0 0;
     font-size: 22px;
 }
 
-.home h1, .home h2, .home p {
+.home-section h1, .home-section h2, .home-section p {
     color: white;
     font-family: helvetica, sans-serif;
 }
@@ -167,7 +167,7 @@ body {
     border-color: transparent
 }
 
-.home .caption {
+.home-section .caption {
     font-size: 0px;
     background-color: cornflowerblue;
     border-radius: 15px;
@@ -189,7 +189,7 @@ body {
 }
 
 /* About Section */
-.about {
+.about-section {
     height: auto;
     display: flex;
     flex-direction: column;
@@ -200,11 +200,11 @@ body {
     padding-bottom: 60px;
 }
 
-.about::-webkit-scrollbar {
+.about-section::-webkit-scrollbar {
     display: none;
 }
 
-.about h1 {
+.about-section h1 {
     color: white;
     font-family: verdana, sans-serif;
     text-align: center;
@@ -212,7 +212,7 @@ body {
     padding: 150px 0 0 0;
 }
 
-.about p {
+.about-section p {
     color: rgb(230,230,230);
     text-align: center;
     font-family: helvetica, sans-serif;
@@ -220,7 +220,7 @@ body {
     margin: 2px 0;
 }
 
-.about h2 {
+.about-section h2 {
     color: white;
     font-family: verdana, sans-serif;
     text-align: center;
@@ -228,7 +228,7 @@ body {
     font-size: 28px;
 }
 
-.tool-container {
+.item-container {
     width: 70vw;
     display: flex;
     flex-wrap: wrap;
@@ -237,11 +237,11 @@ body {
     overflow-y: visible;
 }
 
-.tool-container::-webkit-scrollbar {
+.item-container::-webkit-scrollbar {
     display: none;
 }
 
-.tool {
+.item {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -251,20 +251,20 @@ body {
     height: 50px;
 }
 
-.tool:hover {
+.item:hover {
     transform: scale(1.1);
 }
 
-.tool img {
+.item img {
     width: 30px;
 }
 
-.tool p {
+.item p {
     color: white;
 }
 
 /* Projects Section */
-.projects {
+.projects-section {
     height: auto;
     display: flex;
     flex-direction: column;
@@ -274,14 +274,14 @@ body {
     height: 100vh;
 }
 
-.projects h1 {
+.projects-section h1 {
     color: white;
     font-family: verdana, sans-serif;    
     font-size: 28px;
     font-size: 32px;
 }
 
-.projects h2 {
+.projects-section h2 {
     color: white;
     font-family: helvetica, sans-serif;
     font-size: 28px;
@@ -291,7 +291,7 @@ body {
 .personal-projects {
     display: flex;
     column-gap: 30px;
-    width: 58vw;
+    width: 52.5vw;
     overflow-x: auto;
     height: 450px;
     padding: 10px 25px;
@@ -313,24 +313,7 @@ body {
     border-radius: 10px;
 }
 
-.personal-prokects::-webkit-scrollbar-button {
-    display: block;
-}
-
-.personal-prokects::-webkit-scrollbar-button {
-    background-color: white; 
-    height: 10px; 
-}
-
-.personal-prokects::-webkit-scrollbar-button:vertical:start {
-    display: block;
-}
-
-.personal-prokects::-webkit-scrollbar-button:vertical:end {
-    display: block;
-}
-
-.personal-project-card {
+.project-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -345,12 +328,12 @@ body {
     transition: scale 0.2s ease;
 }
 
-.personal-project-card:hover{
+.project-card:hover{
     transition: scale 0.2s ease;
     scale: 1.05;
 }
 
-.personal-project-card .project-img {
+.project-card .project-img {
     width: 220px;
     height: 220px;
     border: 1.5px solid rgb(180,180,180);
@@ -358,7 +341,7 @@ body {
     margin: 0;
 }
 
-.personal-project-card h3 {
+.project-card h3 {
     margin: 15px;
     color: white;
     font-family: verdana, sans-serif;
@@ -366,7 +349,7 @@ body {
     font-weight: 500;
 }
 
-.personal-project-card p {
+.project-card p {
     margin: 0;
     width: 230px;
     color: rgb(220, 220, 220);
