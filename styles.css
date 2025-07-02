@@ -291,7 +291,7 @@ body {
 .personal-projects {
     display: flex;
     column-gap: 30px;
-    width: 58vw;
+    width: 52vw;
     overflow-x: auto;
     height: 450px;
     padding: 10px 25px;
@@ -319,10 +319,9 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgba(200,200,210,0.09);
-    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.8);
     padding: 12px;
     border-radius: 20px;
-    border: 1px solid rgba(150,150,150, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     height: 380px;
     scale: 1;
     transition: scale 0.2s ease;
@@ -336,7 +335,7 @@ body {
 .project-card .project-img {
     width: 220px;
     height: 220px;
-    border: 1.5px solid rgb(180,180,180);
+    border: 1.5px solid rgb(37, 37, 39);
     border-radius: 5%;
     margin: 0;
 }
