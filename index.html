@@ -1,184 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Emily Huynh's Website</title>  
-        <link rel="stylesheet" href="styles.css">
+        <title>Emily Huynh's Website</title>
+        <link rel="stylesheet" href="./styles.css"/>
+        <script src="data.js" defer></script>
+        <script src="window.js" defer></script>
+        <script src="main.js" defer></script>
     </head>
     <body>
-        <div class="wrapper">
-        <header class="header">
-            <div class="navbar">
-                <ul>
-                    <li><a href="#top">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                </ul>
-            </div>
-        </header>
-
-        <!--Home Section-->
-        <section class="home-section" id="home"> 
-            <div class="profile">
-                <img src="images/avatar.png">
-                <p>I drew this :]</p>
-            </div>
-            <h2>Hello, I'm</h2>
-            <h1>Emily Huynh</h1>
-            <p>Computer Science Student</p>
-            <div class="icon-container">
-                <div class="icon">
-                    <a href="https://www.linkedin.com/in/emily-huynh-tt8/" target="_blank">
-                        <img src="images/linkedin-icon.png" alt="Emily's LinkedIn Profile">
-                    </a>
-                    <p class="caption">LinkedIn</p>
-                </div>
-                <div class="icon">
-                    <a href="https://github.com/emiHuy" target="_blank">
-                        <img src="images/github-icon.png" alt="Emily's GitHub Profile">
-                    </a>
-                    <p class="caption">GitHub</p>
-                </div>
-                <div class="icon">
-                    <a href="mailto:emilyhuynh06@gmail.com" target="_blank">
-                        <img src="images/email-icon.png" alt="Emily's Email">
-                    </a>
-                    <p class="caption">Email</p>
-                </div>
-            </div>
-        </section>
-
-        <!--About Section-->
-        <section class="about-section animated" id="about">
-            <h1>About Me</h1>
-            <p>Honours Computer Science student at Carleton University. </p>
-            <p>Passionate about developing software solutions and problem-solving.</p>
-            <p>Currently seeking opportunities to collaborate on projects and learn.</p>     
-            <h2>Tools and Technologies</h2>
-            <div class="item-container">
-                <div class="item">
-                    <img src="images/java-icon.png">
-                    <p>Java</p>
-                </div>
-                <div class="item">
-                    <img src="images/python-icon.png">
-                    <p>Python</p>
-                </div>
-                <div class="item">
-                    <img src="images/html-icon.png">
-                    <p>HTML</p>
-                </div>
-                <div class="item">
-                    <img src="images/css-icon.png">
-                    <p>CSS</p>
-                </div>
-                <div class="item">
-                    <img src="images/javascript-icon.png">
-                    <p>JavaScript</p>
-                </div>
-                <div class="item">
-                    <img src="images/react-icon.png">
-                    <p>ReactJS</p>
-                </div>
-            </div>
-            <h2>Hobbies and Interests</h2>
-            <div class="item-container">
-                <div class="item">
-                    <img src="images/volleyball-icon.png">
-                    <p>Volleyball</p>
-                </div>
-                <div class="item">
-                    <img src="images/soccer-icon.png">
-                    <p>Soccer</p>
-                </div>
-                <div class="item">
-                    <img src="images/drawing-icon.png">
-                    <p>Drawing</p>
-                </div>
-                <div class="item">
-                    <img src="images/puzzle-icon.png">
-                    <p>Puzzles</p>
-                </div>
-                <div class="item">
-                    <img src="images/video-game-icon.png">
-                    <p>Video Games</p>
-                </div>
-                <div class="item">
-                    <img src="images/photography.png">
-                    <p>Photography</p>
-                </div>
-            </div>
-        </section>
-
-        <!--Projects Section-->
-        <section class="projects-section animated" id="projects">
-            <h1>Projects</h1>
-            <h2>Personal Projects</h2>
-            <div class="personal-projects">
-                <div class="project-card">
-                    <img class="project-img" src="images/haikyuu-app.png" alt="Project Image">
-                    <h3>Haikyuu!! App</h3>
-                    <p>A React web app showcasing characters and teams from Haikyuu!!.</p>
-                    <a href="https://github.com/emiHuy/haikyuu" target="_blank">
-                        <img class="arrow" src="images/arrow.png" alt="Arrow Button">
-                    </a>
-                </div>
-                <div class="project-card">
-                    <img class="project-img" src="images/summarizer.png" alt="Project Image">
-                    <h3>Summarizer</h3>
-                    <p>A simple tool that uses AI to condense information from text, urls, and files.</p>
-                    <a href="https://github.com/emiHuy/summarizer" target="_blank">
-                        <img class="arrow" src="images/arrow.png" alt="Arrow Button">
-                    </a>
-                </div>
-                <div class="project-card">
-                    <img class="project-img" src="images/task-flow.png" alt="Project Image">
-                    <h3>TaskFlow</h3>
-                    <p>A to-do list app that helps organize tasks and displays tasks in a sorted order.</p>
-                    <a href="https://github.com/emiHuy/task-flow" target="_blank">
-                        <img class="arrow" src="images/arrow.png" alt="Arrow Button">
-                    </a>
-                </div>
-                <div class="project-card">
-                    <img class="project-img" src="images/sorting-visualizer.png" alt="Project Image">
-                    <h3>Sorting Visualizer</h3>
-                    <p>Application that visually showcases different sorting algorithms.</p>
-                    <a href="https://github.com/emiHuy/sorting-visualizer" target="_blank">
-                        <img class="arrow" src="images/arrow.png" alt="Arrow Button">
-                    </a>
-                </div>
-                <div class="project-card">
-                    <img class="project-img" src="images/pokemon-app.png" alt="Project Image">
-                    <h3>GO Get Movesets</h3>
-                    <p>Web scraper that fetches optimal pokémon movesets in Pokémon GO.</p>
-                    <a href="https://github.com/emiHuy/go-get-movesets" target="_blank">
-                        <img class="arrow" src="images/arrow.png" alt="Arrow Button">
-                    </a>
-                </div>
-            </div>
-        </section>
-        
-        <footer>
-            <div class="icon-container">
-                <div class="icon">
-                    <a href="https://www.linkedin.com/in/emily-huynh-tt8/" target="_blank">
-                        <img src="images/linkedin-icon.png" alt="Emily's LinkedIn Profile">
-                    </a>
-                </div>
-                <div class="icon">
-                    <a href="https://github.com/emiHuy" target="_blank">
-                        <img src="images/github-icon.png" alt="Emily's GitHub Profile">
-                    </a>
-                </div>
-                <div class="icon">
-                    <a href="mailto:emilyhuynh06@gmail.com" target="_blank">
-                        <img src="images/email-icon.png" alt="Emily's Email">
-                    </a>
-                </div>
-            </div>
-            <p>&copy Emily Huynh. All Rights Reserved.</p>
+        <!-- Greeting -->
+        <div class="greeting">
+            <h1 class="name">Hi! <span class='bold-accented'>I'm Emily.</span></h1>
+            <p class="sub">Computer Science Student</p>
         </div>
+
+        <div class="icon-grid">
+            <!-- About Icon -->
+            <div class="nav-icon" onclick="openWindow('about')">
+                <div class="icon-box">
+                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="rgba(200,190,255,0.7)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+                    </svg>
+                </div>
+                <span class="icon-label">About</span>
+            </div>
+
+            <!-- Experience Icon -->
+            <div class="nav-icon" onclick="openWindow('experience')">
+                <div class="icon-box">
+                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="rgba(150,220,180,0.7)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+                    </svg>
+                </div>
+                <span class="icon-label">Experience</span>
+            </div>
+
+            <!-- Projects Icon -->
+            <div class="nav-icon" onclick="openWindow('projects')">
+                <div class="icon-box">
+                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="rgba(255,200,100,0.7)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+                    </svg>
+                </div>
+                <span class="icon-label">Projects</span>
+            </div>
+
+            <!-- Skills Icon -->
+            <div class="nav-icon" onclick="openWindow('skills')">
+                <div class="icon-box">
+                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="rgba(130,180,255,0.7)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                </div>
+                <span class="icon-label">Skills</span>
+            </div>
+
+            <!-- Contact Icon -->
+            <div class="nav-icon" onclick="openWindow('contact')">
+                <div class="icon-box">
+                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="rgba(240,130,130,0.7)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                </div>
+                <span class="icon-label">Contact</span>
+            </div>
+        </div>
+
+        <!-- Social dock-->
+        <div class="social-dock">
+            <a class="social-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/4401/4401412.png">
+            </a>
+            <a class="social-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+            </a>
+            <a class="social-icon">
+                <img class="scale" src="https://icons.veryicon.com/png/o/internet--web/billion-square-cloud/mail-213.png">
+            </a>
+        </div> 
+
+        <!-- Clock -->
+        <div class="clock" id="clock"></div>
+
+        <!-- Window Overlay -->
+        <div class="overlay" id="overlay" onclick="handleOverlayClick(event)">
+            <div class="window" id="window">
+                <div class="window-header" id="window-header">
+                    <span class="window-title" id="window-title"></span>
+                    <button class="window-close" id="btn-close" onclick="closeWindow()">&#x2715;</button>
+                </div>
+                <div class="window-body" id="window-body"></div>
+            </div>
+        </div>
+
     </body>
-    <footer>
 </html>
